@@ -91,7 +91,7 @@ My favorite hobby is reading books.
 
 ---
 
-## **Extra Challenge (Optional)**
+## **Extra Challenge**
 
 If you want to explore more, try this bonus task:
 
@@ -111,16 +111,15 @@ c = 12 (a and b combined!)
 
 ## **Submission Guidelines:**
 
-1. **Submission Options:**
-   - **Option 1**: Create a Google Colab file (`.ipynb`) and ensure the permissions are set to "Anyone with the link can view." Submit the link in Google Classroom.
-   - **Option 2**: Add comments in your code to explain what each part does.
-2. **Submission Method:** Submit your completed work through the Google Classroom assignment submission portal.
+1. **Submission Instructions:**
+   - **Instructions-1**: Create a notebook file (`.ipynb`) for assignment solution.
+   - **Instructions-2**: Add comments in your code to explain what each part does.
+2. **Instructions-3:** Submit your completed work through the Google Classroom assignment submission portal.
 
 ---
 
 ## **Deadline:**
 
-- **Time:** 11:59 PM on 21/12/2024.
 - **Note:** The deadline will **not be extended** under any circumstances. Please plan accordingly.
 
 ---
