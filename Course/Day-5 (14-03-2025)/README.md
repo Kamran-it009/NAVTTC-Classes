@@ -17,8 +17,6 @@
 5. **Reserved Words**: Avoid using Python reserved words or keywords as variable names (e.g., `class`, `for`, `if`, `else`, `True`, `False`, etc.). These words have special meanings in Python and cannot be used as variable names.
 ---
 <br>
-<br>
-<br>
 
 # Python Keywords
 
