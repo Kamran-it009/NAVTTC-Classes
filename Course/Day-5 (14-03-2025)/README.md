@@ -83,7 +83,3 @@ Python keywords can be grouped into different categories based on their usage.
 
 ## Conclusion
 Understanding Python keywords is essential for writing efficient and error-free code. Since keywords are predefined and reserved, they should not be used for variable or function names. Learning these keywords helps in mastering Python programming.
-
----
-_This document provides an overview of Python keywords and their uses. For the latest keyword list, refer to the official Python documentation._
-
