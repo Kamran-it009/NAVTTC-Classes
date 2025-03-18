@@ -1,2 +1,3 @@
 # National Vocational & Technical Training Comission
-### Day-6
+### Python Weekly Quiz-Day
+
