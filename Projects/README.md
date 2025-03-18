@@ -9,6 +9,48 @@
 
 The player has **10 attempts** to guess the secret number correctly.
 
+## Example Output
+Here is an example session of the program:
+
+```
+Bagels, a deductive logic game.
+By Al Sweigart
+
+I am thinking of a 3-digit number with no repeated digits.
+Try to guess what it is. Here are some clues:
+When I say:    That means:
+  Pico         One digit is correct but in the wrong position.
+  Fermi        One digit is correct and in the right position.
+  Bagels       No digit is correct.
+
+I have thought up a number.
+You have 10 guesses to get it.
+
+Guess #1:
+> 123
+Pico
+
+Guess #2:
+> 456
+Bagels
+
+Guess #3:
+> 178
+Pico Pico
+
+Guess #7:
+> 791
+Fermi Fermi
+
+Guess #8:
+> 791
+You got it!
+
+Do you want to play again? (yes or no)
+> no
+Thanks for playing!
+```
+
 ## Code
 Below is the complete Python implementation of the **Bagels** game:
 
@@ -85,49 +127,13 @@ def getClues(guess, secretNum):
 if __name__ == '__main__':
     main()
 ```
+After entering the source code and running it a few times, try making
+experimental changes to it. The comments marked with (!) have suggestions for small changes you can make. On your own, you can also try to figure out how to do the following:
+- Change the number of digits for the secret number by changing NUM_DIGITS.
+- Change the number of guesses the player gets by changing MAX_GUESSES.
+- Try to create a version with letters as well as digits in the secret number
 
 
-## Example Output
-Here is an example session of the program:
-
-```
-Bagels, a deductive logic game.
-By Al Sweigart
-
-I am thinking of a 3-digit number with no repeated digits.
-Try to guess what it is. Here are some clues:
-When I say:    That means:
-  Pico         One digit is correct but in the wrong position.
-  Fermi        One digit is correct and in the right position.
-  Bagels       No digit is correct.
-
-I have thought up a number.
-You have 10 guesses to get it.
-
-Guess #1:
-> 123
-Pico
-
-Guess #2:
-> 456
-Bagels
-
-Guess #3:
-> 178
-Pico Pico
-
-Guess #7:
-> 791
-Fermi Fermi
-
-Guess #8:
-> 791
-You got it!
-
-Do you want to play again? (yes or no)
-> no
-Thanks for playing!
-```
 ## How it Works
 Keep in mind that this program uses not integer values but rather string
 values that contain numeric digits. For example, '426' is a different value
@@ -137,6 +143,9 @@ a leading digit: the string '026' is different from '26', but the integer 026 is
 the same as 26.
 
 ## Exploration Questions
+Try to find the answers to the following questions. Experiment with some
+modifications to the code and rerun the program to see what effect the
+changes have.
 
 1. **What happens when you change the `NUM_DIGITS` constant?**
 2. **What happens when you change the `MAX_GUESSES` constant?**
