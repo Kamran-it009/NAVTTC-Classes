@@ -1,76 +1,4 @@
-# 📘 Lists and Strings in Python 
-## 🔢 Lists
-
-### 📌 What is a List?
-A **list** is a collection that stores multiple items in one variable. Lists are **ordered**, **changeable (mutable)**, and can hold **different types** of values like numbers, strings, or even other lists.
-
-> Think of a list as a grocery basket where you can add, remove, or replace any item.
-
----
-
-### 🧱 Syntax
-```python
-list_name = [item1, item2, item3, ...]
-```
-
-- `list_name`: any variable name
-- Items are separated by commas
-- Square brackets `[]` define the list
-
----
-
-### ✅ Example
-```python
-fruits = ['apple', 'banana', 'cherry', 'mango']
-print(fruits)
-print(type(fruits))
-```
-**Output:**
-```
-['apple', 'banana', 'cherry', 'mango']
-<class 'list'>
-```
-
----
-
-### ✏️ Updating a List
-You can change an item by accessing it through its index.
-
-```python
-fruits[1] = 'blueberry'
-print(fruits)
-```
-**Output:**
-```
-['apple', 'blueberry', 'cherry', 'mango']
-```
-
----
-
-### 🧰 Common List Methods (with Examples)
-
-| Method       | Description                            | Example                             | Output                          |
-|--------------|----------------------------------------|-------------------------------------|---------------------------------|
-| `append()`   | Adds item at the end                   | `fruits.append('grape')`            | `['apple', ..., 'grape']`       |
-| `insert()`   | Adds item at specific index            | `fruits.insert(1, 'kiwi')`          | `'kiwi'` is added at index 1    |
-| `remove()`   | Removes first matching item            | `fruits.remove('apple')`            | `'apple'` is removed            |
-| `pop()`      | Removes item at given index (default last) | `fruits.pop()`                   | removes last item               |
-| `sort()`     | Sorts the list in ascending order      | `fruits.sort()`                     | sorted list                     |
-| `reverse()`  | Reverses the list                     | `fruits.reverse()`                  | reversed list                   |
-
-#### 🔹 Example
-```python
-numbers = [5, 2, 9, 1]
-numbers.sort()
-print(numbers)
-```
-**Output:**
-```
-[1, 2, 5, 9]
-```
-
----
-
+# 📘 Lists and Strings in Python  
 ## 🔤 Strings
 
 ### 📌 What is a String?
@@ -114,7 +42,7 @@ print(text[2])   # Third character
 ```
 **Output:**
 ```
-P
+P  
 t
 ```
 
@@ -135,7 +63,7 @@ print(text[-3])  # Third from the end
 ```
 **Output:**
 ```
-n
+n  
 h
 ```
 
@@ -165,10 +93,11 @@ print(text[7:])    # From index 7 to the end
 ```
 **Output:**
 ```
-Python
-Python
+Python  
+Python  
 Programming
 ```
+
 ---
 
 ### 🧰 String Methods (with Examples)
@@ -193,8 +122,79 @@ print(text.split())
 
 **Output:**
 ```
-PYTHON PROGRAMMING
-Java Programming
+PYTHON PROGRAMMING  
+Java Programming  
 ['Python', 'Programming']
 ```
 
+---
+
+## 🔢 Lists
+
+### 📌 What is a List?
+A **list** is a collection that stores multiple items in one variable. Lists are **ordered**, **changeable (mutable)**, and can hold **different types** of values like numbers, strings, or even other lists.
+
+> Think of a list as a grocery basket where you can add, remove, or replace any item.
+
+---
+
+### 🧱 Syntax
+```python
+list_name = [item1, item2, item3, ...]
+```
+
+- `list_name`: any variable name  
+- Items are separated by commas  
+- Square brackets `[]` define the list
+
+---
+
+### ✅ Example
+```python
+fruits = ['apple', 'banana', 'cherry', 'mango']
+print(fruits)
+print(type(fruits))
+```
+**Output:**
+```
+['apple', 'banana', 'cherry', 'mango']  
+<class 'list'>
+```
+
+---
+
+### ✏️ Updating a List
+You can change an item by accessing it through its index.
+
+```python
+fruits[1] = 'blueberry'
+print(fruits)
+```
+**Output:**
+```
+['apple', 'blueberry', 'cherry', 'mango']
+```
+
+---
+
+### 🧰 Common List Methods (with Examples)
+
+| Method       | Description                            | Example                             | Output                          |
+|--------------|----------------------------------------|-------------------------------------|---------------------------------|
+| `append()`   | Adds item at the end                   | `fruits.append('grape')`            | `['apple', ..., 'grape']`       |
+| `insert()`   | Adds item at specific index            | `fruits.insert(1, 'kiwi')`          | `'kiwi'` is added at index 1    |
+| `remove()`   | Removes first matching item            | `fruits.remove('apple')`            | `'apple'` is removed            |
+| `pop()`      | Removes item at given index (default last) | `fruits.pop()`                   | removes last item               |
+| `sort()`     | Sorts the list in ascending order      | `fruits.sort()`                     | sorted list                     |
+| `reverse()`  | Reverses the list                      | `fruits.reverse()`                  | reversed list                   |
+
+#### 🔹 Example
+```python
+numbers = [5, 2, 9, 1]
+numbers.sort()
+print(numbers)
+```
+**Output:**
+```
+[1, 2, 5, 9]
+```
