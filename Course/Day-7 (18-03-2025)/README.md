@@ -1,4 +1,4 @@
-# 📘 Lists and Strings in Python  
+# 📘 Strings and Lists in Python  
 ## 🔤 Strings
 
 ### 📌 What is a String?
