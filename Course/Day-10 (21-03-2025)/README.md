@@ -1,6 +1,4 @@
 # 🧠 Exception Handling & Functions in Python 
-## ⚠️ Exception Handling in Python
-
 ### 📘 What is Exception Handling?
 
 **Definition (Simple):**  
