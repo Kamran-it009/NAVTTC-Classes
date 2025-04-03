@@ -2,11 +2,8 @@
 
 ## 1. 2D List
 
-A 2D list is a list of lists. It's essentially a matrix with rows and columns, and each element can be accessed using two indices (row and column).
-
 ### Definition:
-A 2D list is like a table or grid. It’s a list where each item is also a list.  
-You can think of it as rows and columns (like in Excel), and you use two indexes to access values.
+A 2D list is a list where each item is another list, forming a table-like structure with rows and columns that can be accessed using two indexes (like in Excel).
 
 ### Syntax:
 ```python
@@ -23,11 +20,8 @@ print(matrix[0][1])  # Output: 2
 
 ## 2. 3D List
 
-A 3D list is an extension of the 2D list. It’s a list of lists of lists. Each element can be accessed with three indices.
-
 ### Definition:
-A 3D list is like a cube of data. It’s a list that contains lists of lists.  
-You can access the values using three indexes, like layers, rows, and columns.
+A 3D list is a list that contains lists of lists, forming a cube-like structure where elements are accessed using three indexes (layers, rows, and columns).
 
 ### Syntax:
 ```python
@@ -118,10 +112,8 @@ else:
 
 ## 4. Dictionary
 
-A dictionary is a collection of key-value pairs. It allows you to store data in a way that each item is associated with a unique key.
-
 ### Definition:
-A dictionary is a mutable, unordered collection of data values in Python.
+A dictionary is a mutable, unordered collection in Python that stores data as key-value pairs, where each key is unique.
 
 ### Syntax:
 ```python
@@ -138,10 +130,16 @@ print(student["name"])  # Output: Alice
 
 ## 5. Sets
 
-A set is an unordered collection of unique elements. Sets do not allow duplicate values.
-
 ### Definition:
-A set is a collection of unordered, unindexed, and unique elements.
+A set is an unordered and unindexed collection of unique elements that automatically removes duplicates.
+
+### Uses of Sets:
+
+✅ To remove duplicates from a list
+
+✅ To perform mathematical operations like union, intersection, and difference
+
+✅ To check membership quickly using in
 
 ### Syntax:
 ```python
@@ -159,10 +157,8 @@ print(fruits)  # Output: {'banana', 'apple', 'orange', 'cherry'}
 
 ## 6. Tuple
 
-A tuple is an ordered, immutable collection of elements. Unlike lists, tuples cannot be changed once they are created.
-
 ### Definition:
-A tuple is an immutable collection of ordered elements.
+A tuple is an ordered collection of elements that cannot be changed (immutable) once created.
 
 ### Syntax:
 ```python
