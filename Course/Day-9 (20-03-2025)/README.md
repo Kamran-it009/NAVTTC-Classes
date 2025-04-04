@@ -1,17 +1,13 @@
 # ✅ Loops and Nested Conditions in Python 
 ## 🔁 What is a Loop?
 
-### 📘 Definition:
-A **loop** is used to run a block of code **again and again** until a certain condition is met.  
-Think of it like repeating something until you're told to stop.
+A **loop** is used to run a block of code **again and again** until a certain condition is met.Think of it like repeating something until you're told to stop.
 
 ---
 
 ## 1️⃣ While Loop
 
-### 📘 Definition:
-A while loop keeps doing something as long as a condition is true.
-It checks the condition before each run, and if it’s false, the loop stops.
+A while loop keeps doing something as long as a condition is true. It checks the condition before each run, and if it’s false, the loop stops.
 
 ### 🔤 Syntax:
 ```python
@@ -39,7 +35,6 @@ Count: 2
 
 ## 2️⃣ For Loop
 
-### 📘 Definition:
 A for loop is used to go through each item in a group (like a list or string) one by one, and do something with each item.
 
 ### 🔤 Syntax:
@@ -67,9 +62,7 @@ cherry
 
 ## 3️⃣ Nested Loop
 
-### 📘 Definition:
-A nested loop means a loop inside another loop.
-The inner loop runs completely every time the outer loop runs once.
+A nested loop means a loop inside another loop. The inner loop runs completely every time the outer loop runs once.
 
 ### ✅ Example:
 ```python
@@ -91,7 +84,6 @@ x = 2, y = 3
 
 ## 4️⃣ List Comprehension
 
-### 📘 Definition:
 List comprehension is a short and smart way to create a new list by looping through something and changing or filtering the items.
 
 ### 🔤 Syntax:
@@ -113,7 +105,6 @@ print(squares)
 
 ## 5️⃣ Iterables
 
-### 📘 Definition:
 An **iterable** is anything you can loop through, like a list, string, or dictionary.
 
 ### ✅ Example:
@@ -136,16 +127,13 @@ cherry
 ---
 
 ### 📘 What is a Condition?
-A **condition** checks whether something is true or false.  
-We use `if`, `else`, and `elif` to make decisions in our code.
+A **condition** checks whether something is true or false. We use `if`, `else`, and `elif` to make decisions in our code.
 
 ---
 
 ## 1️⃣ Nested Conditions
 
-### 📘 Definition:
-A **nested condition** is when one `if` statement is **inside another**.  
-Useful when one condition depends on another.
+A **nested condition** is when one `if` statement is **inside another**. Useful when one condition depends on another.
 
 ### ✅ Example:
 ```python
@@ -171,9 +159,7 @@ Try again in Math
 
 ## 2️⃣ Shortcut of if-else (Ternary Operator)
 
-### 📘 Definition:
-A shortcut of if-else lets you write a quick decision in one line.
-It’s useful when you just want to check something and give one of two answers.
+A shortcut of if-else lets you write a quick decision in one line. It’s useful when you just want to check something and give one of two answers.
 
 ```python
 value_if_true if condition else value_if_false
