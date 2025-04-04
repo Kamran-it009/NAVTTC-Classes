@@ -124,10 +124,8 @@ cherry
 
 ## 🌐 Nested Conditions in Python
 
-### 📘 What is a Condition?
+## 📘 What is a Condition?
 A **condition** checks whether something is true or false. We use `if`, `else`, and `elif` to make decisions in our code.
-
----
 
 ## 1️⃣ Nested Conditions
 
