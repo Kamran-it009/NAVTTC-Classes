@@ -74,15 +74,17 @@ h
 #### 📘 Definition:
 **Slicing** is used to get a part (or "slice") of the string using a range of indexes.
 
-#### 🔹 Syntax:
+### Syntax:
 ```python
 string[start:end]
 ```
 
-- `start`: index where the slice begins (included)
-- `end`: index where the slice ends (excluded)
-- If `start` is omitted, slicing starts from 0.
-- If `end` is omitted, slicing goes till the end.
+### Parameters:
+
+- **start**: The index where the slice begins (included).
+- **end**: The index where the slice ends (excluded).
+- **If start is omitted**: The slicing starts from index `0` by default.
+- **If end is omitted**: The slicing continues till the end of the string.
 
 #### 🔹 Example:
 ```python
