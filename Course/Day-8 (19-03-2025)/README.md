@@ -2,7 +2,6 @@
 
 ## 1. 2D List
 
-### Definition:
 A 2D list is a list where each item is another list, forming a table-like structure with rows and columns that can be accessed using two indexes (like in Excel).
 
 ### Syntax:
@@ -20,7 +19,6 @@ print(matrix[0][1])  # Output: 2
 
 ## 2. 3D List
 
-### Definition:
 A 3D list is a list that contains lists of lists, forming a cube-like structure where elements are accessed using three indexes (layers, rows, and columns).
 
 ### Syntax:
@@ -40,7 +38,6 @@ print(cube[1][0][1])  # Output: 6
 
 ### if statement
 
-#### Definition:
 The `if` statement checks if something is true, and if it is, it runs the block of code.
 
 #### Syntax:
@@ -60,7 +57,6 @@ if x > 5:
 
 ### if-else statement
 
-#### Definition:
 The `if-else` statement runs one block of code if the condition is true, and another block if the condition is false.
 
 #### Syntax:
@@ -84,7 +80,6 @@ else:
 
 ### if-else-if (elif) statement
 
-#### Definition:
 The `elif` statement allows checking multiple conditions. It’s a way to handle different cases.
 
 #### Syntax:
@@ -112,7 +107,6 @@ else:
 
 ## 4. Dictionary
 
-### Definition:
 A dictionary is a mutable, unordered collection in Python that stores data as key-value pairs, where each key is unique.
 
 ### Syntax:
@@ -130,7 +124,6 @@ print(student["name"])  # Output: Alice
 
 ## 5. Sets
 
-### Definition:
 A set is an unordered and unindexed collection of unique elements that automatically removes duplicates.
 
 ### Uses of Sets:
@@ -157,7 +150,6 @@ print(fruits)  # Output: {'banana', 'apple', 'orange', 'cherry'}
 
 ## 6. Tuple
 
-### Definition:
 A tuple is an ordered collection of elements that cannot be changed (immutable) once created.
 
 ### Syntax:
