@@ -1,7 +1,6 @@
 # 🧠 Exception Handling & Functions in Python 
 ### 📘 What is Exception Handling?
 
-**Definition (Simple):**  
 Exception handling is a way to **stop your program from crashing** when something goes wrong.  
 It lets you **catch errors** and handle them **nicely**, so the program can keep going.
 
@@ -52,7 +51,6 @@ except ValueError:
 
 ## 2️⃣ Finally Block
 
-### 📘 Definition:
 The finally block is a part of exception handling in Python that always runs, no matter what.
 It runs whether there is an error or not.
 It’s usually used to clean up—like closing files or ending connections—even if an error happens.
@@ -77,7 +75,6 @@ File closed.
 
 ## 3️⃣ Raising Exceptions
 
-### 📘 Definition:
 Raising an exception means you manually stop the program and show an error if something isn’t right.
 You use the raise keyword to do this.
 
@@ -100,7 +97,6 @@ ValueError: Negative value not allowed!
 
 ### 📘 What is a Function?
 
-**Definition (Simple):**  
 A function is a block of code that does a specific job.
 You define it once using the def keyword, and then you can call it whenever needed.
 Functions help you reuse code, make your programs organized, and avoid repetition.
