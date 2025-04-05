@@ -1,4 +1,4 @@
-# Python README: OOP (Object-Oriented Programming) in Python
+# OOP (Object-Oriented Programming) in Python
 
 ## **Example of Class and Object**
 
