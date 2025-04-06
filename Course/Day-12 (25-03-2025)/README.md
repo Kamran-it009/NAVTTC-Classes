@@ -2,6 +2,7 @@
 
 ### **Decorators**
 
+**Definition:**
 Decorators in Python are a way to modify or enhance the behavior of a function or method. They allow you to wrap another function in order to extend its behavior without permanently modifying it.
 
 **Syntax:**
@@ -21,33 +22,11 @@ def function_to_decorate():
 **Parameters:**
 - `func`: The function that will be passed to the decorator for modification.
 
-**Example:**
-```python
-def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
-
-@my_decorator
-def sum():
-    print('I am a sum..')
-
-sum()
-```
-
-**Output:**
-```
-Something is happening before the function is called.
-I am a sum..
-Something is happening after the function is called.
-```
-
 ---
 
 ### **File Handling**
 
+**Definition:**
 File handling in Python refers to reading from, writing to, and appending data in files. Python provides built-in functions to handle file operations.
 
 #### **Reading Files**
@@ -65,53 +44,28 @@ file.close()  # Always close the file after use
 - `mode`: Determines the mode in which the file is opened, e.g., `'r'` for reading, `'w'` for writing, `'a'` for appending.
 - `content`: The data read from the file.
 
-**Example:**
-```python
-# Reading a file
-file = open('data.txt', mode='r')
-file_data = file.read()
-print(file_data)
-file.close()
-```
+**File Modes Table:**
 
-#### **Writing Files**
+| Mode | Description | File Pointer Position | File Must Exist? | Creates New File If Not Exists? |
+|------|-------------|------------------------|------------------|-------------------------------|
+| 'r'  | Read mode – Opens a file for reading. | Beginning | Yes | No |
+| 'w'  | Write mode – Opens a file for writing. Overwrites if file exists. | Beginning | No | Yes |
+| 'a'  | Append mode – Opens a file for appending. Data is added to the end. | End | No | Yes |
+| 'x'  | Exclusive creation – Creates a new file, fails if the file exists. | Beginning | No | Yes (only if it doesn't exist) |
+| 'r+' | Read and write mode – Opens a file for both reading and writing. | Beginning | Yes | No |
+| 'w+' | Write and read mode – Opens a file for both writing and reading. Overwrites file. | Beginning | No | Yes |
+| 'a+' | Append and read mode – Opens a file for both appending and reading. | End | No | Yes |
+| 'x+' | Exclusive creation for read and write – Creates a file and opens it. | Beginning | No | Yes (only if it doesn't exist) |
 
-**Syntax:**
-```python
-file = open('file_name', mode='w')  # 'w' mode for writing
-file.write('Hello, world!')
-file.close()
-```
-
-**Example:**
-```python
-# Writing to a file
-file = open('output.txt', mode='w')
-file.write('Hello, this is a new file.')
-file.close()
-```
-
-#### **Appending Data in Files**
-
-**Syntax:**
-```python
-file = open('file_name', mode='a')  # 'a' mode for appending
-file.write('New line of text')
-file.close()
-```
-
-**Example:**
-```python
-# Appending to a file
-file = open('output.txt', mode='a')
-file.write('This is an appended line.\n')
-file.close()
-```
+**Notes:**
+- You can add `'b'` (binary) or `'t'` (text, default) to any mode, e.g. `'rb'`, `'wb'`, etc.
+- Always close the file after use, or use a `with open(...) as f:` block to auto-close.
 
 ---
 
 ### **Generators**
 
+**Definition:**
 Generators in Python are a type of iterable, like lists or tuples, but instead of holding all values in memory, they generate values on the fly using the `yield` keyword. This makes them memory efficient.
 
 **Syntax:**
@@ -138,4 +92,3 @@ banana
 ```
 
 ---
-
