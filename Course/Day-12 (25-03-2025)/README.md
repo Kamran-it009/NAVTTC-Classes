@@ -1,89 +1,94 @@
-# 🧠 Exception Handling & Functions in Python 
-## ⚠️ Exception Handling in Python
+## Decorators, File Handling, and Generators
 
-### 📘 What is Exception Handling?
+### **Decorators**
 
-**Definition (Simple):**  
-Exception handling is a way to **stop your program from crashing** when something goes wrong.  
-It lets you **catch errors** and handle them **nicely**, so the program can keep going.
+**Definition:**
+Decorators in Python are a way to modify or enhance the behavior of a function or method. They allow you to wrap another function in order to extend its behavior without permanently modifying it.
 
-> For example: If someone tries to divide a number by 0 — normally that would crash the program. But with exception handling, you can show a message like “You can’t divide by zero!”
-
----
-
-## 1⃣ Try-Except Block
-
-### 🔤 Syntax:
+**Syntax:**
 ```python
-try:
-    # Code that might cause an error
-except ErrorType:
-    # Code to run if there's an error
+def decorator_name(func):
+    def wrapper():
+        # Do something before the function is called
+        func()
+        # Do something after the function is called
+    return wrapper
+
+@decorator_name
+def function_to_decorate():
+    # Function logic here
 ```
 
+**Parameters:**
+- `func`: The function that will be passed to the decorator for modification.
+
 ---
 
-### 🧱 try, except, else, finally Block
+### **File Handling**
 
-Python allows combining different parts in one exception handling structure:
+**Definition:**
+File handling in Python refers to reading from, writing to, and appending data in files. Python provides built-in functions to handle file operations.
 
+#### **Reading Files**
+
+**Syntax:**
 ```python
-try:
-    # Code that might cause an error
-except ErrorType:
-    # Runs if there is a matching error
-else:
-    # Runs if no error occurs in try block
-finally:
-    # Always runs, no matter what
+file = open('file_name', mode='r')
+content = file.read()  # Read the entire file
+line = file.readline()  # Read a single line
+lines = file.readlines()  # Read all lines into a list
+file.close()  # Always close the file after use
 ```
 
-**Components:**
-- **`try:`** The main code you think might crash
-- **`except:`** Runs only if an error happens
-- **`else:`** Runs if everything inside try worked fine
-- **`finally:`** Runs no matter what – great for cleanup
+**Parameters:**
+- `mode`: Determines the mode in which the file is opened, e.g., `'r'` for reading, `'w'` for writing, `'a'` for appending.
+- `content`: The data read from the file.
+
+**File Modes Table:**
+
+| Mode | Description | File Pointer Position | File Must Exist? | Creates New File If Not Exists? |
+|------|-------------|------------------------|------------------|-------------------------------|
+| 'r'  | Read mode – Opens a file for reading. | Beginning | Yes | No |
+| 'w'  | Write mode – Opens a file for writing. Overwrites if file exists. | Beginning | No | Yes |
+| 'a'  | Append mode – Opens a file for appending. Data is added to the end. | End | No | Yes |
+| 'x'  | Exclusive creation – Creates a new file, fails if the file exists. | Beginning | No | Yes (only if it doesn't exist) |
+| 'r+' | Read and write mode – Opens a file for both reading and writing. | Beginning | Yes | No |
+| 'w+' | Write and read mode – Opens a file for both writing and reading. Overwrites file. | Beginning | No | Yes |
+| 'a+' | Append and read mode – Opens a file for both appending and reading. | End | No | Yes |
+| 'x+' | Exclusive creation for read and write – Creates a file and opens it. | Beginning | No | Yes (only if it doesn't exist) |
+
+**Notes:**
+- You can add `'b'` (binary) or `'t'` (text, default) to any mode, e.g. `'rb'`, `'wb'`, etc.
+- Always close the file after use, or use a `with open(...) as f:` block to auto-close.
 
 ---
 
-## 2⃣ Finally Block
+### **Generators**
 
-### 📘 Definition:
-The finally block is a part of exception handling in Python that always runs, no matter what.
-It runs whether there is an error or not.
-It’s usually used to clean up—like closing files or ending connections—even if an error happens.
+**Definition:**
+Generators in Python are a type of iterable, like lists or tuples, but instead of holding all values in memory, they generate values on the fly using the `yield` keyword. This makes them memory efficient.
 
-> Use it when you want to make sure something gets done at the end.
-
----
-
-## 3⃣ Raising Exceptions
-
-### 📘 Definition:
-Raising an exception means you manually stop the program and show an error if something isn’t right.
-You use the `raise` keyword to do this.
-
-> Use it when you want to create your own error messages if certain conditions aren't met.
-
----
-
-# 🧹 Functions in Python
-
-### 📘 What is a Function?
-
-**Definition (Simple):**  
-A function is a block of code that does a specific job.
-You define it once using the `def` keyword, and then you can call it whenever needed.
-Functions help you reuse code, make your programs organized, and avoid repetition.
-
-> Think of a function like a recipe: give it ingredients (input), follow the steps (code), and get a dish (output).
-
----
-
-### 🔤 Syntax:
+**Syntax:**
 ```python
-def function_name():
-    # code block
+def generator_function():
+    yield value
+```
+
+**Parameters:**
+- `value`: The value that is generated at each iteration.
+
+**Example:**
+```python
+fruits = ['apple', 'banana', 'cherry', 'mango']
+gen = iter(fruits)  # Creating an iterator object
+print(next(gen))  # 'apple'
+print(next(gen))  # 'banana'
+```
+
+**Output:**
+```
+apple
+banana
 ```
 
 ---
