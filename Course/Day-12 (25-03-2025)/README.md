@@ -2,7 +2,6 @@
 
 ### **Decorators**
 
-**Definition:**
 Decorators in Python are a way to modify or enhance the behavior of a function or method. They allow you to wrap another function in order to extend its behavior without permanently modifying it.
 
 **Syntax:**
@@ -26,7 +25,6 @@ def function_to_decorate():
 
 ### **File Handling**
 
-**Definition:**
 File handling in Python refers to reading from, writing to, and appending data in files. Python provides built-in functions to handle file operations.
 
 #### **Reading Files**
@@ -65,7 +63,6 @@ file.close()  # Always close the file after use
 
 ### **Generators**
 
-**Definition:**
 Generators in Python are a type of iterable, like lists or tuples, but instead of holding all values in memory, they generate values on the fly using the `yield` keyword. This makes them memory efficient.
 
 **Syntax:**
