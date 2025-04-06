@@ -2,8 +2,7 @@
 ## ⚠️ Exception Handling in Python
 
 ### 📘 What is Exception Handling?
-
-**Definition (Simple):**  
+ 
 Exception handling is a way to **stop your program from crashing** when something goes wrong.  
 It lets you **catch errors** and handle them **nicely**, so the program can keep going.
 
@@ -71,7 +70,6 @@ You use the `raise` keyword to do this.
 
 ### 📘 What is a Function?
 
-**Definition (Simple):**  
 A function is a block of code that does a specific job.
 You define it once using the `def` keyword, and then you can call it whenever needed.
 Functions help you reuse code, make your programs organized, and avoid repetition.
