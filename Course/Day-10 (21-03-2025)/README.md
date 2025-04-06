@@ -110,5 +110,3 @@ Functions help you reuse code, make your programs organized, and avoid repetitio
 def function_name():
     # code block
 ```
-
----
