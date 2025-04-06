@@ -1,6 +1,9 @@
 # 🧠 Exception Handling & Functions in Python 
+## ⚠️ Exception Handling in Python
+
 ### 📘 What is Exception Handling?
 
+**Definition (Simple):**  
 Exception handling is a way to **stop your program from crashing** when something goes wrong.  
 It lets you **catch errors** and handle them **nicely**, so the program can keep going.
 
@@ -8,7 +11,7 @@ It lets you **catch errors** and handle them **nicely**, so the program can keep
 
 ---
 
-## 1️⃣ Try-Except Block
+## 1⃣ Try-Except Block
 
 ### 🔤 Syntax:
 ```python
@@ -18,87 +21,59 @@ except ErrorType:
     # Code to run if there's an error
 ```
 
-### ✅ Example:
-```python
-try:
-    x = 5 / 0
-except ZeroDivisionError:
-    print("You can't divide by zero!")
-```
-
-**Output:**
-```
-You can't divide by zero!
-```
-
 ---
 
-### 🧱 Multiple Except Blocks
+### 🧱 try, except, else, finally Block
 
-You can check for more than one type of error:
+Python allows combining different parts in one exception handling structure:
 
 ```python
 try:
-    value = int(input("Enter a number: "))
-    result = 10 / value
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
-except ValueError:
-    print("Invalid input! Please enter a number.")
+    # Code that might cause an error
+except ErrorType:
+    # Runs if there is a matching error
+else:
+    # Runs if no error occurs in try block
+finally:
+    # Always runs, no matter what
 ```
+
+**Components:**
+- **`try:`** The main code you think might crash
+- **`except:`** Runs only if an error happens
+- **`else:`** Runs if everything inside try worked fine
+- **`finally:`** Runs no matter what – great for cleanup
 
 ---
 
-## 2️⃣ Finally Block
+## 2⃣ Finally Block
 
+### 📘 Definition:
 The finally block is a part of exception handling in Python that always runs, no matter what.
 It runs whether there is an error or not.
 It’s usually used to clean up—like closing files or ending connections—even if an error happens.
 
 > Use it when you want to make sure something gets done at the end.
 
-### ✅ Example:
-```python
-try:
-    file = open("data.txt", "r")
-finally:
-    file.close()
-    print("File closed.")
-```
-
-**Output:**
-```
-File closed.
-```
-
 ---
 
-## 3️⃣ Raising Exceptions
+## 3⃣ Raising Exceptions
 
+### 📘 Definition:
 Raising an exception means you manually stop the program and show an error if something isn’t right.
-You use the raise keyword to do this.
+You use the `raise` keyword to do this.
 
 > Use it when you want to create your own error messages if certain conditions aren't met.
 
-### ✅ Example:
-```python
-x = -5
-if x < 0:
-    raise ValueError("Negative value not allowed!")
-```
+---
 
-**Output:**
-```
-ValueError: Negative value not allowed!
-```
-
-# 🧩 Functions in Python
-
+# 🧹 Functions in Python
 
 ### 📘 What is a Function?
 
+**Definition (Simple):**  
 A function is a block of code that does a specific job.
-You define it once using the def keyword, and then you can call it whenever needed.
+You define it once using the `def` keyword, and then you can call it whenever needed.
 Functions help you reuse code, make your programs organized, and avoid repetition.
 
 > Think of a function like a recipe: give it ingredients (input), follow the steps (code), and get a dish (output).
@@ -110,3 +85,6 @@ Functions help you reuse code, make your programs organized, and avoid repetitio
 def function_name():
     # code block
 ```
+
+---
+
